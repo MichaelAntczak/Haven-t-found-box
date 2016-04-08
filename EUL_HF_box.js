@@ -14,31 +14,37 @@ $(function() {
 	// add the HTML structure and content for the box, div containers and the content
 	$('#exlidIdeasBrief').append('<div id="iEUL_HF_title"></div>');
 	$('#exlidIdeasBrief').append('<div id="iEUL_HF_content"></div>');
-	$('#iEUL_HF_title').append("<h2>Haven't found what you're looking for?</h2>");
-	$('#iEUL_HF_content').append("<h3>Would you like to search an external source</h3>");
+	$('#iEUL_HF_title').append("<h2>TEST - Having troubles finding what you're looking for?</h2>");
+	$('#iEUL_HF_content').append("<h3>Would you like to search in another library?</h3>");
 	$('#iEUL_HF_content').append('<p>Search for&nbsp;<span class="cEUL_HF_searchTerm"></span>&nbsp;in&nbsp;<span id="iEUL_HF_copacLink">COPAC</span>.</p>');
 	$('#iEUL_HF_content').append('<p>Search for&nbsp;<span class="cEUL_HF_searchTerm"></span>&nbsp;in <a href="http://main-cat.nls.uk/vwebv/searchBasic">National Library of Scotland</a>.</p>');
-		
+	$('#iEUL_HF_content').append("<h3>Would you like to recommend the item for purchase?</h3>");
+	$('#iEUL_HF_content').append('<p>If you are a student, you can use <a href="https://www.ease.ed.ac.uk/cosign.cgi?cosign-eucsCosign-lac-edwebtools.is.ed.ac.uk&http://lac-edwebtools.is.ed.ac.uk/bookrecs/secure/StudRec.php" target="_blank">RAB</a> to tell us and we will try and buy it for the library.</p>');
+	$('#iEUL_HF_content').append('<p>If you are a member of staff, then you can go to the <a href="http://www.ed.ac.uk/information-services/library-museum-gallery/using-library/request-resources/recommend-books" target="_blank">staff recommendation form</a>.</p>');
+	$('#iEUL_HF_content').append("<h3>Other options:</h3>");
+	$('#iEUL_HF_content').append('<p>If you require a book quickly, you may prefer to submit an <a href="https://ed-ac.illiad.oclc.org/illiad/logon.html" target="_blank"> Inter-Library Loan request</a>.</p>');
+	$('#iEUL_HF_content').append('<p>Or maybe you want to find it on <a href="http://www.amazon.co.uk/s/ref=nb_sb_noss_2?url=search-alias%3Daps&field-keywords=mama+mia" target="_blank">Amazon UK</a>.</p>');
 	
-	// add CSS to the box
+	// al the CSS to the box
 	$('#exlidIdeasBrief').css({
-		'border' : '3px solid red',
-		'padding' : '10px'
+
 	})
 	
 	$('#iEUL_HF_title').css({
-		'border' : '1px solid pink',
-		'marginBottom' : '10px'
+		'text-align' : 'center',
+		'color' : 'white',
+		'background-clip' : 'border-box',
+		'background-color' : '#1B325E',
+		'padding' : '1em',
 	})
 	
 	$('#iEUL_HF_title > h2').css({
-		'border' : '1px solid red',
-		'marginBottom' : '10px'
+
 	})
 	
 	$('#iEUL_HF_content').css({
-		'border' : '1px solid green',
-		'marginBottom' : '10px'
+		'border' : '2px solid #1B325E',
+		'padding' : '1em 1em 0 1em',
 	})
 	
 	$('#iEUL_HF_content > p').css({
@@ -50,7 +56,7 @@ $(function() {
 	})
 	
 	$('.cEUL_HF_searchTerm').css({
-		"background" : "blue",
+		"background" : "#1B325E",
 		"color" : "white",
 		"padding-left" : "10px",
 		"padding-right" : "10px"
