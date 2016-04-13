@@ -14,7 +14,7 @@ $(function() {
 	// add the HTML structure and content for the box, div containers and the content
 	$('#exlidIdeasBrief').append('<div id="iEUL_HF_title"></div>');
 	$('#exlidIdeasBrief').append('<div id="iEUL_HF_content"></div>');
-	$('#iEUL_HF_title').append("<h2>TEST - Having troubles finding what you're looking for?</h2>");
+	$('#iEUL_HF_title').append("<h2>TEST - Having trouble finding what you're looking for?</h2>");
 	$('#iEUL_HF_content').append("<h3>Would you like to search in another library?</h3>");
 	$('#iEUL_HF_content').append('<p>Search for&nbsp;<span class="cEUL_HF_searchTerm"></span>&nbsp;in&nbsp;<span id="iEUL_HF_copacLink">COPAC</span>.</p>');
 	$('#iEUL_HF_content').append('<p>Search for&nbsp;<span class="cEUL_HF_searchTerm"></span>&nbsp;in <a href="http://main-cat.nls.uk/vwebv/searchBasic">National Library of Scotland</a>.</p>');
